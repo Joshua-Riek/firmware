@@ -1,0 +1,43 @@
+#!/usr/bin/make -f
+
+export LC_ALL=C
+export SHELL=/bin/bash -e
+
+dest_dir = $(CURDIR)/debian/rockchip-firmware
+
+install-indep:
+	dh_testdir
+	dh_testroot
+	dh_prep -i
+
+	install -d $(dest_dir)/lib/firmware
+	install -d $(dest_dir)/usr/share/doc/rockchip-firmware
+	install -d $(dest_dir)/usr/share/doc/rockchip-firmware/licenses
+
+	cp debian/copyright $(dest_dir)/usr/share/doc/rockchip-firmware/licenses
+	rsync -a --exclude 'debian' --exclude '.git' ./ $(dest_dir)/lib/firmware
+
+binary-indep: install-indep
+	dh_testdir
+	dh_testroot
+
+	dh_installchangelogs -i
+	dh_installdocs -i
+	dh_compress -i
+	dh_fixperms -i
+	dh_installdeb -i
+	dh_gencontrol -i
+	dh_md5sums -i
+	dh_builddeb -i
+
+binary: binary-indep
+
+build:
+
+clean:
+	dh_testdir
+	dh_testroot
+	dh_clean
+
+check:
+	$(MAKE) check

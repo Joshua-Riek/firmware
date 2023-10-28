@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -eE 
+trap 'echo Error: in $0 on line $LINENO' ERR
+
+cd "$(dirname -- "$(readlink -f -- "$0")")" && cd ../../
+
+# Current upstream commit and version
+COMMIT=$(git rev-parse HEAD)
+
+# Display version based off current commit and date
+echo "$(git show -s --date=format:'%Y%m%d' --format=%cd "${COMMIT}").git${COMMIT::8}"
+
