@@ -1,5 +1,5 @@
-rockchip-firmware (20231105.git63c25af6-1) UNRELEASED; urgency=medium
+rockchip-firmware (20231105.git2107be54-1) jammy; urgency=medium
 
-  * Initial release.
+  * Initial release. 
 
  -- Joshua Riek <jjriek@verizon.net>  Sun, 05 Nov 2023 13:41:59 -0500
