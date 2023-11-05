@@ -1,3 +1,9 @@
+rockchip-firmware (20231105.git2107be54-3) jammy; urgency=medium
+
+  * Remove more confliicting firmware
+
+ -- Joshua Riek <jjriek@verizon.net>  Sun, 05 Nov 2023 17:54:06 -0500
+
 rockchip-firmware (20231105.git2107be54-2) jammy; urgency=medium
 
   * Remove brcm firmware
