@@ -1,3 +1,9 @@
+rockchip-firmware (20231105.git2107be54-4) jammy; urgency=medium
+
+  * Add aic8800 firmware
+
+ -- Joshua Riek <jjriek@verizon.net>  Sat, 13 Jan 2024 22:03:49 -0500
+
 rockchip-firmware (20231105.git2107be54-3) jammy; urgency=medium
 
   * Remove more confliicting firmware
