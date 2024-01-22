@@ -1,3 +1,9 @@
+rockchip-firmware (20231105.git2107be54-5) jammy; urgency=medium
+
+  * Add ap6212 firmware
+
+ -- Joshua Riek <jjriek@verizon.net>  Mon, 22 Jan 2024 17:24:53 -0500
+
 rockchip-firmware (20231105.git2107be54-4) jammy; urgency=medium
 
   * Add aic8800 firmware
