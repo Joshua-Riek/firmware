@@ -1,3 +1,9 @@
+rockchip-firmware (20231105.git2107be54-9) jammy; urgency=medium
+
+  * Fix typo in firmware name for rtl8821cs
+
+ -- Joshua Riek <jjriek@verizon.net>  Fri, 26 Jan 2024 14:09:35 -0500
+
 rockchip-firmware (20231105.git2107be54-8) jammy; urgency=medium
 
   * Add 8822cs firmware for bsp kernel with symlink
