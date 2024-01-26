@@ -1,3 +1,9 @@
+rockchip-firmware (20231105.git2107be54-11) jammy; urgency=medium
+
+  * Fix rtl8821cs via symlink
+
+ -- Joshua Riek <jjriek@verizon.net>  Fri, 26 Jan 2024 14:28:10 -0500
+
 rockchip-firmware (20231105.git2107be54-10) jammy; urgency=medium
 
   * I broke it again
