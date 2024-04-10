@@ -1,3 +1,9 @@
+rockchip-firmware (20231105.git2107be54-13~noble) noble; urgency=medium
+
+  * Rebuild for noble
+
+ -- Joshua Riek <jjriek@verizon.net>  Wed, 10 Apr 2024 18:13:51 -0400
+
 rockchip-firmware (20231105.git2107be54-12~n) noble; urgency=medium
 
   * Bump to Ubuntu Noble
