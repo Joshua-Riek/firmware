@@ -1,3 +1,9 @@
+rockchip-firmware (20231105.git2107be54-15~noble) noble; urgency=medium
+
+  * Add brcmfmac43456 for the Orange Pi 5 Pro
+
+ -- Joshua Riek <jjriek@verizon.net>  Thu, 25 Apr 2024 12:21:08 -0400
+
 rockchip-firmware (20231105.git2107be54-14~noble) noble; urgency=medium
 
   * Fix ap6275p for 6.1 bsp
