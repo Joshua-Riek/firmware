@@ -1,3 +1,9 @@
+rockchip-firmware (20231105.git2107be54-16~noble) noble; urgency=medium
+
+  * Add BCM4345C0.hcd for the Orange Pi 5 Pro
+
+ -- Joshua Riek <jjriek@verizon.net>  Mon, 29 Apr 2024 08:56:43 -0400
+
 rockchip-firmware (20231105.git2107be54-15~noble) noble; urgency=medium
 
   * Add brcmfmac43456 for the Orange Pi 5 Pro
