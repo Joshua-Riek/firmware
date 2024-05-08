@@ -1,3 +1,9 @@
+rockchip-firmware (20231105.git2107be54-17~jammy) jammy; urgency=medium
+
+  * Package for jammy
+
+ -- Joshua Riek <jjriek@verizon.net>  Wed, 08 May 2024 05:23:34 -0400
+
 rockchip-firmware (20231105.git2107be54-17~noble) noble; urgency=medium
 
   * Add BCM4345C5.hcd for the Orange Pi 5 Pro
