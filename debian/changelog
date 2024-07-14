@@ -1,3 +1,9 @@
+rockchip-firmware (20231105.git2107be54-18~noble) noble; urgency=medium
+
+  * Add symlink for the Orange Pi 5 Pro
+
+ -- Joshua Riek <jjriek@verizon.net>  Sun, 14 Jul 2024 17:06:07 -0400
+
 rockchip-firmware (20231105.git2107be54-17~noble) noble; urgency=medium
 
   * Add BCM4345C5.hcd for the Orange Pi 5 Pro
