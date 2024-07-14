@@ -1,3 +1,9 @@
+rockchip-firmware (20231105.git2107be54-18~jammy) jammy; urgency=medium
+
+  * Add symlink for the Orange Pi 5 Pro
+
+ -- Joshua Riek <jjriek@verizon.net>  Sun, 14 Jul 2024 17:08:22 -0400
+
 rockchip-firmware (20231105.git2107be54-17~jammy) jammy; urgency=medium
 
   * Package for jammy
