@@ -1,0 +1,34 @@
+name: build
+on: push
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+    - id: set-matrix
+      run: |
+        git clone https://github.com/Joshua-Riek/ubuntu-rockchip
+        cd ubuntu-rockchip
+        matrix=""
+        for file in config/boards/*; do
+            COMPATIBLE_SUITES=()
+            COMPATIBLE_FLAVORS=()
+            # shellcheck disable=SC1090
+            source "${file}"
+            for suite in "${COMPATIBLE_SUITES[@]}"; do
+                if [ "${suite}" == "oracular" ]; then
+                    for flavor in "${COMPATIBLE_FLAVORS[@]}"; do
+                        matrix+="{\"board\":\"$(basename "${file%.sh}")\",\"suite\":\"${suite}\",\"flavor\":\"${flavor}\"},"
+                    done
+                fi
+            done
+        done
+        echo "matrix={\"include\":[${matrix::-1}]}" >> $GITHUB_OUTPUT
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    strategy:
+      matrix: ${{fromJson(needs.job1.outputs.matrix)}}
+    steps:
+    - run: build
